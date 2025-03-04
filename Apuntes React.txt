@@ -1,0 +1,16 @@
+1. useState
+Qué hace: Permite agregar estado local a un componente funcional.
+Cómo funciona: Devuelve un par: el estado actual y una función para actualizarlo.
+
+const [count, setCount] = useState(0);
+
+2. useEffect
+Qué hace: Maneja efectos secundarios como llamadas a APIs, suscripciones o manipulaciones del DOM.
+Cómo funciona: Ejecuta una función después de renderizar. Puedes especificar dependencias para controlar cuándo se ejecuta.
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount((prevCount) => prevCount + 1);
+    }, 1000);
+
+

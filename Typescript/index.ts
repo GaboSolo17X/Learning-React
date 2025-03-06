@@ -184,3 +184,45 @@ enum WeatherCodition{
 
 const currentWeather = WeatherCodition.Snowy
 
+//--------------------------------------------------------------------------------
+//Class Properties Annotation
+
+class Persona{
+    name:string;
+    age:number;
+
+    constructor(name:string, age:number){
+        this.name=name;
+        this.age-age
+    }
+}
+
+const persona = new Persona('john',20)
+
+//--------------------------------------------------------------------------------
+//Generic Function
+
+function printInfo<T>(x: T):T{
+    return x
+}
+
+const str = printInfo<string>("Hello")
+const num = printInfo<number>(3)
+
+//--------------------------------------------------------------------------------
+//Type Narrowing
+type MyType1=string|number
+
+function example(value:MyType1):void{
+    if(typeof value==="string"){
+        //algo
+    }else{
+        //algo
+    }
+}
+
+
+//--------------------------------------------------------------------------------
+//Instance of
+
+//Intersection types

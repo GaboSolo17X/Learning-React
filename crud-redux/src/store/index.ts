@@ -3,7 +3,7 @@ import usersReducer, { rollbackUser } from "./users/slice"
 import { toast } from "sonner";
 
 
-//Middlware
+//Middlewares
 const persistanceMiddleware: Middleware = (store) => (next) =>(action) =>{
     next(action);
     localStorage.setItem("___redux___State", JSON.stringify(store.getState()));

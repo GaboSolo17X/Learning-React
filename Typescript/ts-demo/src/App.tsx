@@ -3,26 +3,27 @@
 // import { UserInfo } from "./components/UserInfo";
 // import { AdminInfo } from "./components/AdminInfo";
 import { Form } from "./components/Exercise-3/Form";
-import { Info,AdminInfoList } from "./Types";
+// import { Info,AdminInfoList } from "./Types";
 // import { Counter } from './components/Exercise-1/Counter';
 // import { Todos } from "./components/Exercise-2/Todos";
 // import { UserProfile } from './components/Exercise-2/UserProfile';
 
+
 export const App = () => {
 
-  const user:Info = {
-    id:1,
-    name:'John Doe',
-    email:'john@gmail.com'
-  }
+  // const user:Info = {
+  //   id:1,
+  //   name:'John Doe',
+  //   email:'john@gmail.com'
+  // }
 
-  const admin:AdminInfoList ={
-    id:2,
-    name:'Janeth Smith',
-    email:'jane@gmial.com',
-    role:'admin',
-    lastLogin:new Date(),
-  }
+  // const admin:AdminInfoList ={
+  //   id:2,
+  //   name:'Janeth Smith',
+  //   email:'jane@gmial.com',
+  //   role:'admin',
+  //   lastLogin:new Date(),
+  // }
 
   return (
 
@@ -39,6 +40,7 @@ export const App = () => {
     {/* <UserProfile></UserProfile>
     <Todos></Todos> */}
     <Form/>
+
     </>
   )
 }
